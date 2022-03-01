@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Restaurant</title>
+        <link rel="shortcut icon" href="./assets/img/footer-logo.png" type="image/x-icon">
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles/reset.css">      
+		<link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="./styles/media.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+       
+ 
+	</head>
+	<body>
+        <div class="preloader">
+            <div class="preloader__row">
+              <div class="preloader__item"></div>
+              <div class="preloader__item"></div>
+            </div>
+          </div>
+        <div class="up"><a href="#"><img src="./assets/img/arrow.png" alt=""></a></div>
+        <!-- <div class="container">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-tree"></div>
+        <div class="line-four"></div>
+        <div class="line-five"></div>
+        <div class="line-six"></div>
+        </div> -->
+        <section id="up" class="block-1">
+        <header class="main-header">
+            <div class="container">
+               <a href="#"><img class="main-header-logo" src="./assets/img/footer-logo.png"></img></a>
+                <nav class="main-header-menu">
+                    <ul>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>   
+                        <li><a href="#menu">Menu</a></li>                  
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a style="margin-right: 0;"href="#reserve">Reserve</a></li>
+                    </ul>
+                </nav>
+                <button class="main-header-side-menu-button" onclick="toggleSideMenu(1)">
+                    <div class="stripes stripes1"></div>
+                    <div class="stripes stripes2"></div>
+                    <div class="stripes stripes3"></div>            
+                </button>
+
+                <div class="NavigationSlideOut">
+                    <ul class="navbar">
+                        <img
+                            style="margin-bottom: 30px"
+                            src="https://laurent.qodeinteractive.com/wp-content/uploads/2019/10/footer-logo.png"
+                            alt="logo"
+                        />
+                        <li style="margin-bottom: 25px; font-size: 21px" class="NavigationTab">
+                            <p>Laurent Fine dining,</p>
+                        </li>
+                        <li class="NavigationTab"><a  href="#">Logvinenko-150</a></li>
+                        <li class="NavigationTab"><a  href="tel:+996-705-48-45-45">+996-705-48-45-45</a></li>
+                        <li
+                            style="margin-bottom: 25px; margin-top: 20px; font-size: 21px"
+                            class="NavigationTab"
+                        >
+                            <p>Open: 07:00 am – 23:00 pm</p>
+                        </li>
+        
+                        <li class="NavigationTab"><a style="color: #c9ab81;"  href="#">Facebook</a></li>
+                        <li class="NavigationTab"><a style="color: #c9ab81;"  href="#">Instagram</a></li>
+                        <li class="NavigationTab"><a style="color: #c9ab81;"  href="#">Twitter</a></li>
+                    </ul>
+                </div>
+        
+                <div class="menuIcon">
+                    <div class="line_one"></div>
+                    <div class="line_two"></div>
+                    <div class="line_three"></div>
+                </div>
+            </div>
+        </header>
+        <nav class="side-menu">
+            <div class="side-menu-content">
+                <ul>
+                    <li><a href="#about" class="side-menu-item">ABOUT US</a></li>
+                    <li><a href="#restaurant" class="side-menu-item">Restaurant</a></li>                   
+                    <li><a href="#menu" class="side-menu-item">Menu</a></li>    
+                    <li><a href="#contact" class="side-menu-item">Contact</a></li>
+                    <li><a href="#reserve" class="side-menu-item">Reserve</a></li>
+                </ul>
+            </div>
+            <div class="side-menu-close-div"></div>
+        </nav>
+        
+        <div class="sliders single-items">
+            <div class="column main-slide" id="caption">
+             
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="text2 main-slide-text">
+                    Сozy atmosphere</span>
+                    <h2>From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</h2>
+     
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+            </div>
+            <div class="column main-slide" id="caption">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="text2 main-slide-text">
+                    Best chefs</span>
+                    <h2>From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</h2>
+                <img src="https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </div>
+            <div class="column  main-slide2" id="caption">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="text2 main-slide-text2">
+                    High quality long aged wine</span>
+                    <h2>From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</h2>
+                <img src="https://images.unsplash.com/photo-1611575189074-9dfbbceb258a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </div>
+            <div class="column main-slide2" id="caption">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="text2 main-slide-text2">
+                    Responsive and friendly staff
+                    </span>
+                    <h2>From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</h2>
+                <img src="./assets/img/main-person.jpg" alt="">
+            </div>
+            <div class="column main-slide2" id="caption">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="text2 main-slide-text2">
+                    The best Italian cuisine
+                    </span>
+                    <h2>From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</h2>
+                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="column main-slide2" id="caption">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="text2 main-slide-text2">
+                    Сlean kitchen
+                    </span>
+                    <h2>From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</h2>
+                    <img src="https://images.unsplash.com/photo-1595187139760-5cedf9ab5850?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=931&q=80" alt="">
+                </div>
+           </div> 
+      
+            </section>
+            <section id="about" class="block_3">
+                  <div class="container">
+                    <div style="text-align: center; padding-top:50px;" data-aos="fade-down" class="restaurant">
+                        <p>Our Story</p>
+                        <div class="zakaz-h2">
+                            <img src="./assets/img/oimo1.png" alt="">
+                        <h2>about us
+                        </h2>
+                        <img src="./assets/img/oimo2.png" alt="">
+                        </div>
+                </div>
+                <div class="swiper vertical">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-3">
+                            <div class="slide-text">
+                                <h2 data-aos="fade-down">Jonathan Kay</h2>
+                                <p class="block_3_p" data-aos="fade-right">CO-Founder & CEO</p>
+                                <p class="block_3_p_2" data-aos="fade-up">
+                                    Leads the daily operations at Apptopia, including product
+                                    development and global sales. Jonathan is passionate about people,
+                                    sports, and really efficient processes.
+                                </p>
+                            </div>
+                            <div class="slide-img">
+                                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <div class="slide-text">
+                                <h2>Eli Sapir</h2>
+                                <p class="block_3_p">Assistant director</p>
+                                <p class="block_3_p_2">
+                                    Drives Apptopia’s strategic vision and manages investor relations.
+                                    Before Apptopia Eli was involved in several startups, including:
+                                    GPush, Oasys Water, GreatPoint Energy, and DVTel.
+                                </p>
+                            </div>
+                            <div class="slide-img">
+                                <img src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <div class="slide-text">
+                                <h2>Jenny Taylor</h2>
+                                <p class="block_3_p">Chief Product Officer</p>
+                                <p class="block_3_p_2">
+                                    Oversees all stages of Apptopia's product lifecycle. Strategic
+                                    thinker with a passion for building teams and creating elegant
+                                    solutions to complex problems.
+                                </p>
+                            </div>
+                            <div class="slide-img">
+                                <img src="https://images.unsplash.com/photo-1520404209763-4699fa7f15f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <div class="slide-text">
+                                <h2>Peter Parker</h2>
+                                <p class="block_3_p">Chef</p>
+                                <p class="block_3_p_2">
+                                    31 years old, but despite such a young age, work experience is
+                                    about 15 years. During this time, I had to work in completely
+                                    different areas and positions, see all kinds of cuisines.
+                                </p>
+                            </div>
+                            <div class="slide-img">
+                                <img src="https://images.unsplash.com/photo-1622101805459-861e7cf6d4ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination pag1"></div>
+                </div>
+        
+                </div>
+            </section>
+
+        <section id="restaurant" class="block_2">
+            <div class="container">
+            <div class="block_2_text">
+                <div data-aos="fade-down" class="restaurant">
+                    <p>Our Story</p>
+                    <div class="zakaz-h2">
+                        <img src="./assets/img/oimo1.png" alt="">
+                    <h2>about the restaurant
+                    </h2>
+                    <img src="./assets/img/oimo2.png" alt="">
+                    </div>
+            </div>
+            <p  data-aos="fade-up"class="lastP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui omnis tempore consectetur tempora quidem laborum at accusantium sequi, veniam rerum, maiores, ducimus temporibus autem voluptates?</p>
+        
+        <div class="swiper coverflow">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1489528792647-46ec39027556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY0fHxyZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEwfHxyZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1515668236457-83c3b8764839?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYyfHxyZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1613946069412-38f7f1ff0b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1588123190131-1c3fac394f4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1583426189374-8090f9dd26cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="./assets/img/About-slide/about7.png" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide coverflow-slide">
+                <img src="https://images.unsplash.com/photo-1495709162665-628e115576f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ3fHxyZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+        </div>
+        </div>
+        </section>     
+        
+       
+
+        <section class="block_4">
+            <div class="container">
+            <div class="block_4_box">
+                <div class="block_4_box1">
+                    <img   data-aos="zoom-in" src="https://laurent.qodeinteractive.com/wp-content/uploads/2019/10/main-img-5.jpg" alt="">
+                </div>
+                <div class="block_4_box2">
+                    <div data-aos="fade-down" class="block4-heading">
+                        <p>Recommendations</p>
+                        <div class="block3img">
+                            <img src="./assets/img/oimo1.png" alt="">
+                        <h2>OUR BEST SPECIALTIES
+                        </h2>
+                        <img src="./assets/img/oimo2.png" alt="">
+                        </div>
+                </div>
+                <p data-aos="fade-up" class="block_4_p_2 ">Lorem ipsum dolor sit amet, consectet adipisicing eli sed do eiu smotem por incididunt ut abore et dolore magali qua. Ut enim ad minm eni amquis nostrud exercitation.
+                </p>
+                <p data-aos="fade-up" class="block_4_p_3" style="display: none;">ipsum dolor sit, amet consectetur adipisicing elit. Optio doloribus repudiandae enim non quia nobis eos, cupiditate itaque quae atque vitae, amet omnis quas natus inventore, tenetur laborum quo dicta.
+                </p>
+
+                <button href="#" class="block_4_but btn btn-5">
+                    VIEV ALL
+                </button> 
+             
+            </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="video">
+                <video src="./assets/img/resto14.mp4" autoplay muted loop></video>
+            </div>
+        </section>
+
+        <section  id="menu" class="block_6">
+            <div class="container">
+                <div class="menu2">
+                    <div data-aos="fade-down"  class="contact-heading">
+                        <p>Special selection</p>
+                        <div class="contact-h2">
+                            <img src="./assets/img/oimo1.png" alt="">
+                        <h2>FROM OUR MENU</h2>
+                      
+                        <img src="./assets/img/oimo2.png" alt="">
+                        </div>
+                </div>
+
+                <div class="menu_box">  
+                        <button class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                            <span class = "menu_text">
+                                <h1>Pizza</h1>
+                            </span>
+                            <img  src = "https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                        </button>
+
+                            <button href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Drink</h1>
+                                </span>
+                                <img  src="https://images.unsplash.com/photo-1560512823-829485b8bf24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRyaW5rc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                            </button> 
+
+                       <button href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Coffee</h1>
+                                </span>
+                                <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZmZlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                            </button>  
+
+                        <button href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Hot dish</h1>
+                                </span>
+                                <img src = "https://images.unsplash.com/photo-1571805341302-f857308690e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlzaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                            </button> 
+
+                        <button href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Сocktail</h1>
+                                </span>
+                                <img src = "https://images.unsplash.com/photo-1620832107928-6d835b70fcfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGRyaW5rc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                            </button>  
+
+                        <button href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Salad</h1>
+                                </span>
+                                <img src = "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNhbGFkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                            </button>  
+
+                            <button style="margin-bottom: 0;" href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Burger</h1>
+                                </span>
+                                <img src = "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                            </button>
+
+                        <button style="margin-bottom: 0;" href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Dessert</h1>
+                                </span>
+                                <img src = "https://images.unsplash.com/photo-1547414368-ac947d00b91d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                            </button>
+
+                        <button style="margin-bottom: 0;" href = "./html/pizza.html" class = "column col-xs-6 menu-animate" id = "caption"data-aos="fade-up">
+                                <span class = "menu_text">
+                                    <h1>Banquet dish</h1>
+                                </span>
+                                <img src = "https://images.unsplash.com/photo-1586511934875-5c5411eebf79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGRpc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                            </button> 
+                          
+                </div>
+                <div class="menu_list">
+                    <div class="menu">
+                        <div class="menu_block">
+                            <div data-aos="fade-right"  class="menu_item">
+                                <h2>BEEF BURGER MEAL</h2>
+                                <div class="menu_line"></div>
+                                <span>32$</span>
+                            </div>
+                            <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                            <!-- <div class="order">
+                                <button id="minus">-</button>
+                                <div id="vyvod"></div>
+                                <button id="plus">+</button>
+                            </div> -->
+                            <div class="menu_item" data-aos="fade-right" >
+                                <h2>BEEF BURGER MEAL</h2>
+                                <div class="menu_line"></div>
+                                <span>32$</span>
+                            </div>
+                            <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                            <!-- <div class="order">
+                                <button id="minus">-</button>
+                                <div id="vyvod"></div>
+                                <button id="plus">+</button>
+                            </div> -->
+                            <div data-aos="fade-right"  class="menu_item">
+                                <h2>BEEF BURGER MEAL</h2>
+                                <div class="menu_line"></div>
+                                <span>32$</span>
+                            </div>
+                            <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                            <!-- <div class="order">
+                                <button id="minus">-</button>
+                                <div id="vyvod"></div>
+                                <button id="plus">+</button>
+                            </div> -->
+                            <div data-aos="fade-right"  class="menu_item">
+                                <h2>BEEF BURGER MEAL</h2>
+                                <div class="menu_line"></div>
+                                <span>32$</span>
+                            </div>
+                            <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                            <!-- <div class="order">
+                                <button id="minus">-</button>
+                                <div id="vyvod"></div>
+                                <button id="plus">+</button>
+                            </div> -->
+                            <div data-aos="fade-right"  class="menu_item">
+                                <h2>BEEF BURGER MEAL</h2>
+                                <div class="menu_line"></div>
+                                <span>32$</span>
+                            </div>
+                            <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                            <!-- <div class="order">
+                                <button id="minus">-</button>
+                                <div id="vyvod"></div>
+                                <button id="plus">+</button>
+                            </div> -->
+                        </div>
+                          
+                            <div data-aos="fade-right"  class="menu_block">
+                                <div class="menu_item">
+                                    <h2>BEEF BURGER MEAL</h2>
+                                    <div class="menu_line"></div>
+                                    <span>32$</span>
+                                </div>
+                                <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                                <!-- <div class="order">
+                                    <button id="minus">-</button>
+                                    <div id="vyvod"></div>
+                                    <button id="plus">+</button>
+                                </div> -->
+                                <div data-aos="fade-right"  class="menu_item">
+                                    <h2>BEEF BURGER MEAL</h2>
+                                    <div class="menu_line"></div>
+                                    <span>32$</span>
+                                </div>
+                                <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                                <!-- <div class="order">
+                                    <button id="minus">-</button>
+                                    <div id="vyvod"></div>
+                                    <button id="plus">+</button>
+                                </div> -->
+                                <div data-aos="fade-right"  class="menu_item">
+                                    <h2>BEEF BURGER MEAL</h2>
+                                    <div class="menu_line"></div>
+                                    <span>32$</span>
+                                </div>
+                                <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                                <!-- <div class="order">
+                                    <button id="minus">-</button>
+                                    <div id="vyvod"></div>
+                                    <button id="plus">+</button>
+                                </div> -->
+                                <div data-aos="fade-right"  class="menu_item">
+                                    <h2>BEEF BURGER MEAL</h2>
+                                    <div class="menu_line"></div>
+                                    <span>32$</span>
+                                </div>
+                                <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                                <!-- <div class="order">
+                                    <button id="minus">-</button>
+                                    <div id="vyvod"></div>
+                                    <button id="plus">+</button>
+                                </div> -->
+                                <div data-aos="fade-right"  class="menu_item menu_item_last">
+                                    <h2>BEEF BURGER MEAL</h2>
+                                    <div class="menu_line"></div>
+                                    <span>32$</span>
+                                </div>
+                                <p data-aos="fade-up" >Classic greek salad, barrel aged feta cheese, bread</p>  
+                                <!-- <div class="order">
+                                    <button id="minus">-</button>
+                                    <div id="vyvod"></div>
+                                    <button id="plus">+</button>
+                                </div> -->
+                        </div>
+                      
+                    </div>
+                    <button href="#" class="menu_button btn btn-5">
+                        VIEV ALL
+                    </button>
+               </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="block_7">
+            <div class="container">
+            <div class="contact">
+                <div class="contact-form">
+                <div data-aos="fade-down" class="contact-heading">
+                        <p>Write to us</p>
+                        <div class="contact-h2">
+                            <img src="./assets/img/oimo1.png" alt="">
+                        <h2>CONTACT US
+                        </h2>
+                        <img src="./assets/img/oimo2.png" alt="">
+                        </div>
+                </div>
+                
+                <div>
+                    <form action="#">
+                    <input class="contact-text contact-input" type="text" placeholder="Name" required>
+                    <input class="contact-email contact-input" type="email" placeholder="E-mail" required>
+                    <textarea class="textarea contact-input" id="" cols="10" rows="5" placeholder="Message"></textarea>
+                  
+                
+                <button type="submit" class="block_7_but btn btn-5" id="send_form">
+                    SEND
+                </button> 
+                </form>
+            </div>
+            </div>
+            <div class="adres">
+                
+                <div class="adres-box-1">
+                    <div class="adres-box1">
+                    <h2>Bishkek</h2>
+                   <p> <a href="tel:+9964854845">
+                        +996-705-48-45-45
+                    </a></p>
+                    <p><a href="#">
+                        Ibraimova 115a
+                    </a></p>
+                    <p><a href="mailto:qwerty@gmail.com">qwerty@gmail.com</a></p>
+                    </div>
+                    <div  class="adres-box2">
+                    <h2>Osh</h2>
+                    <p><a href="tel:+9964854845">
+                        +996-705-48-12-21
+                    </a></p>
+                   <p><a href="#">
+                        Kurmanjan-Datka 21
+                    </a></p>
+                    <p><a href="mailto:qwerty@gmail.com">qwerty@gmail.com</a></p>
+                </div>
+                </div>
+                <div class="adres-box-2">
+                    <div class="adres-box3">
+                    <h2>Moscow</h2>
+                  <p><a href="tel:+9964854845">
+                        +7-170-484-54-45
+                    </a></p>
+                    <p><a href="#">
+                        Kiev 87
+                    </a> </p>
+                    <p><a href="mailto:qwerty@gmail.com">qwerty@gmail.com</a>
+                        </p>
+                        </div>
+                        <div class="adres-box4">
+                    <h2>Astana</h2>
+                   <p> <a href="tel:+9964854845">
+                        +7-567-548-45-45
+                    </a></p>
+                    <p><a href="#">
+                        Almatinskaya 113
+                    </a></p>
+                    <p><a href="mailto:qwerty@gmail.com">qwerty@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="googleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8768629560404!2d74.59665851488442!3d42.87544311039136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7de9c521bdd%3A0xda37ff9e8185256c!2zQmFuc3JhIFN0cmVldCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1645466143525!5m2!1sru!2skg" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+        </section>
+        <section class="block-8" id="reserve">
+            <div class="container">
+                <div class="zakaz">
+                    <div data-aos="fade-down" class="zakaz-heading">
+                        <p>Reservations</p>
+                        <div class="zakaz-h2">
+                            <img src="./assets/img/oimo1.png" alt="">
+                        <h2>BOOK A TABLE
+                        </h2>
+                        <img src="./assets/img/oimo2.png" alt="">
+                        </div>
+                </div>
+                <form>
+                    <div class="zakaz-box">
+                       
+                        <div class="select2">
+                            <select class="person">
+                                <option value="1-человека">1 Person</option>
+                                <option value="2-человек">2 Person</option>
+                                <option value="3-человек">3 Person</option>
+                                <option value="4-человек">4 Person</option>
+                                <option value="5-человек">5 Person</option>
+                                <option value="6-человек">6 Person</option>
+                                <option value="7-человек">7 Person</option>
+                                <option value="8-человек">8 Person</option>
+                                <option value="9-человек">9 Person</option>
+                                <option value="10-человек">10 Person</option>
+                            </select>
+                        </div>
+                        <div >
+                            <input class="select data" type="date">
+                            <!-- <img src="./assets/img/calendar.png" alt=""> -->
+                        </div>
+                        <div class="select2">
+                            <select class="time">
+                                <option value="7:00">7:00</option>
+                                <option value="8:00">8:00</option>
+                                <option value="9:00">9:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                                <option value="22:00">22:00</option>
+                                <option value="23:00">23:00</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class=" selbtn btn btn-5">Book Now</button>
+                        </div>
+                        
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="foot">
+                <img data-aos="fade-down" src="./assets/img/footer-logo.png" alt="logo">
+                <h2 >Laurent Restaurant & Fine dining, <a href="#">Logvinenko-150</a></h2>
+                <h2 >Bishkek,
+                    <a href="tel:+996-705-48-45-45">+996-705-48-45-45,</a> 
+                    <a href="mailto:qwerty@gmail.com">qwerty@gmail.com</a>
+                  
+                </h2>
+                <p  >Open: 07:00 am – 23:00 pm</p>
+                <div  class="social">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram </a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+       
+       
+       
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./slick/slick.min.js"></script>
+        <script src="./tata-master/dist/tata.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <script src="./script.js"></script>
+	</body>
+</html>
